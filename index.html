@@ -8,55 +8,163 @@
     <title>Dot4 Community Meetup 2026</title>
 
     <style>
-        *{
-            box-sizing:border-box;
+        * {
+            box-sizing: border-box;
         }
 
-        html, body{
-            margin:0;
-            padding:0;
-            overflow-x:hidden;
-            background:#0d1117;
-            color:#ffffff;
-            font-family:'Segoe UI',sans-serif;
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+            background: #0d1117;
+            color: #ffffff;
+            font-family: 'Segoe UI', sans-serif;
         }
 
-        a{
-            color:inherit;
+        body {
+            min-height: 100%;
         }
 
-        img{
-            max-width:100%;
-            height:auto;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
-        .container{
-            max-width:900px;
-            margin:0 auto;
-            background:#161b22;
+        .page {
+            width: 100%;
+            background: #0d1117;
         }
 
-        @media (max-width:768px){
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #161b22;
+        }
 
-            h1{
-                font-size:30px !important;
+        .section {
+            padding: 50px 30px;
+        }
+
+        .header {
+            padding: 60px 30px;
+            text-align: center;
+            background: linear-gradient(135deg, #1f2937, #111827);
+        }
+
+        .header h1 {
+            font-size: 42px;
+            margin: 0 0 10px;
+        }
+
+        .info-box {
+            margin-top: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .session-section {
+            background: #0d1117;
+        }
+
+        .session-card {
+            padding: 15px;
+            background: #161b22;
+            margin-bottom: 10px;
+        }
+
+        .green {
+            border-left: 4px solid #22c55e;
+        }
+
+        .blue {
+            border-left: 4px solid #3b82f6;
+        }
+
+        .purple {
+            border-left: 4px solid #a855f7;
+        }
+
+        .yellow {
+            border-left: 4px solid #f59e0b;
+        }
+
+        .red {
+            border-left: 4px solid #ef4444;
+        }
+
+        .sponsor-box {
+            margin-top: 30px;
+            padding: 20px;
+            background: #161b22;
+            border-radius: 10px;
+        }
+
+        .talker {
+            padding: 60px 30px;
+            background: #0d1117;
+        }
+
+        .apply {
+            padding: 60px 30px;
+            text-align: center;
+            background: linear-gradient(135deg, #1f2937, #111827);
+        }
+
+        .apply a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 40px;
+            background: #22c55e;
+            color: #000000;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer {
+            padding: 30px;
+            text-align: center;
+            font-size: 14px;
+            opacity: 0.6;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .section,
+            .header,
+            .talker,
+            .apply {
+                padding: 40px 20px;
             }
 
-            h2{
-                font-size:24px !important;
+            .header h1 {
+                font-size: 30px;
             }
 
-            p, li, strong, span{
-                font-size:15px !important;
+            h2 {
+                font-size: 24px;
             }
 
-            .section{
-                padding:40px 20px !important;
+            p,
+            li,
+            strong,
+            span {
+                font-size: 15px;
             }
 
-            .button{
-                width:100%;
-                display:block !important;
+            .apply a {
+                width: 100%;
             }
         }
     </style>
@@ -64,235 +172,168 @@
 
 <body>
 
-<div class="container">
+    <div class="page">
+        <div class="container" id="content">
 
-    <!-- 포스터 -->
-    <div>
-        <img src="images/meetup_2605.jpg" />
-    </div>
+            <!-- 포스터 이미지 -->
+            <div>
+                <img src="images/meetup_2605.jpg" alt="Dot4 Community Meetup Poster">
+            </div>
 
-    <!-- 헤더 -->
-    <div class="section"
-         style="padding:60px 30px;
-                text-align:center;
-                background:linear-gradient(135deg,#1f2937,#111827);">
+            <!-- 헤더 -->
+            <div class="header">
+                <h1>Dot4 Community Meetup</h1>
+                <p style="opacity:0.8;">개발자들의 실전 이야기, 함께 나눕니다 🚀</p>
 
-        <h1 style="font-size:42px; margin-bottom:10px;">
-            Dot4 Community Meetup
-        </h1>
+                <div class="info-box">
+                    <p>📅 2026년 5월 28일 (목)</p>
+                    <p>🕐 13:30 ~ 16:30</p>
+                    <p>📍 한국 마이크로소프트 13층</p>
+                    <p style="opacity:0.6;">서울 종로구 종로1길 50</p>
+                </div>
+            </div>
 
-        <p style="opacity:0.8;">
-            개발자들의 실전 이야기, 함께 나눕니다 🚀
-        </p>
+            <!-- 소개 -->
+            <div class="section">
+                <h2>👋 행사 소개</h2>
 
-        <div style="margin-top:30px;
-                    background:rgba(255,255,255,0.05);
-                    padding:20px;
-                    border-radius:12px;">
+                <p style="text-align:center;">
+                    Dot4 Community (https://dot4.kr/)는<br>
+                    김진석, 유저스틴, 조장원이 함께하는 개발자 밋업입니다.
+                </p>
+            </div>
 
-            <p>📅 2026년 5월 28일 (목)</p>
-            <p>🕐 13:30 ~ 16:30</p>
-            <p>📍 한국 마이크로소프트 13층</p>
-            <p style="opacity:0.6;">
-                서울 종로구 종로1길 50
-            </p>
+            <!-- 세션 -->
+            <div class="section session-section">
+                <h2>⏰ 세션 일정</h2>
+
+                <div style="margin-top:30px;">
+
+                    <div class="session-card green">
+                        <strong>13:30 - 13:40</strong><br>
+                        오프닝
+                    </div>
+
+                    <div class="session-card blue">
+                        <strong>13:40 - 14:30</strong><br>
+                        에이전트 잘 깎아서 잘 배포하고 남는 시간에 운동합시다.<br>
+                        - 유저스틴
+                    </div>
+
+                    <div class="session-card purple">
+                        <strong>14:40 - 15:30</strong><br>
+                        해보려고 한 것이 하네스 엔지니어링이라던데요?<br>
+                        - 김진석
+                    </div>
+
+                    <div class="session-card yellow">
+                        <strong>15:40 - 16:30</strong><br>
+                        퇴근 후 솔로프리너가 되는 방법<br>
+                        - 조장원
+                    </div>
+
+                    <div class="session-card red">
+                        <strong>16:30</strong><br>
+                        클로징
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 안내 -->
+            <div class="section">
+                <h2>📢 안내사항</h2>
+
+                <div style="margin-top:20px;">
+                    <p>🚫 당일 주차 지원이 제공되지 않습니다</p>
+                    <p>🚇 대중교통 이용을 부탁드립니다</p>
+                </div>
+
+                <div class="sponsor-box">
+                    <p>🎁 스폰서</p>
+                    <strong>INFRAGISTICS</strong><br>
+                    <span style="opacity:0.7;">UI/UX 3rd Party Tool 제공</span>
+                </div>
+            </div>
+
+            <!-- 발표자 모집 -->
+            <div class="talker">
+                <h2>🎤 Dot4 Talker 모집</h2>
+
+                <p style="text-align:center; margin-top:20px;">
+                    매월 마지막 주 목요일 오프라인 밋업에서<br>
+                    여러분이 직접 발표자가 될 수 있습니다!
+                </p>
+
+                <ul style="margin-top:20px; line-height:1.8;">
+                    <li>.NET 기술 이야기</li>
+                    <li>개인 프로젝트</li>
+                    <li>개발 경험 및 노하우</li>
+                </ul>
+
+                <p style="margin-top:20px;">👉 주제는 자유롭게 준비하세요!</p>
+            </div>
+
+            <!-- 신청 -->
+            <div class="apply">
+                <h2>발표 신청</h2>
+
+                <a href="https://forms.office.com/r/z5QtKLUweU" target="_blank">
+                    신청하기 →
+                </a>
+            </div>
+
+            <!-- 푸터 -->
+            <div class="footer">
+                Dot4 Community Meetup | 2026.05.28
+            </div>
+
         </div>
     </div>
 
-    <!-- 소개 -->
-    <div class="section" style="padding:50px 30px;">
+    <!-- iframe 높이 자동 조절용 -->
+    <script>
+        function sendHeight() {
+            const body = document.body;
+            const html = document.documentElement;
 
-        <h2 style="text-align:center;">
-            👋 행사 소개
-        </h2>
+            const height = Math.max(
+                body.scrollHeight,
+                body.offsetHeight,
+                html.clientHeight,
+                html.scrollHeight,
+                html.offsetHeight
+            );
 
-        <p style="text-align:center; line-height:1.8;">
-            Dot4 Community (https://dot4.kr/)는<br>
-            김진석, 유저스틴, 조장원이 함께하는 개발자 밋업입니다.
-        </p>
-    </div>
+            parent.postMessage({
+                type: "setHeight",
+                height: height
+            }, "*");
+        }
 
-    <!-- 세션 -->
-    <div class="section"
-         style="padding:50px 30px;
-                background:#0d1117;">
+        window.addEventListener("load", sendHeight);
+        window.addEventListener("resize", sendHeight);
 
-        <h2 style="text-align:center;">
-            ⏰ 세션 일정
-        </h2>
+        const images = document.querySelectorAll("img");
 
-        <div style="margin-top:30px;">
+        images.forEach(function (img) {
+            img.addEventListener("load", sendHeight);
+        });
 
-            <div style="padding:15px;
-                        border-left:4px solid #22c55e;
-                        background:#161b22;
-                        margin-bottom:10px;">
+        if ("ResizeObserver" in window) {
+            const observer = new ResizeObserver(function () {
+                sendHeight();
+            });
 
-                <strong>13:30 - 13:40</strong><br>
-                오프닝
-            </div>
+            observer.observe(document.body);
+            observer.observe(document.documentElement);
+        }
 
-            <div style="padding:15px;
-                        border-left:4px solid #3b82f6;
-                        background:#161b22;
-                        margin-bottom:10px;">
-
-                <strong>13:40 - 14:30</strong><br>
-
-                에이전트 잘 깎아서 잘 배포하고 남는 시간에 운동합시다.<br>
-
-                - 유저스틴
-            </div>
-
-            <div style="padding:15px;
-                        border-left:4px solid #a855f7;
-                        background:#161b22;
-                        margin-bottom:10px;">
-
-                <strong>14:40 - 15:30</strong><br>
-
-                해보려고 한 것이 하네스 엔지니어링이라던데요?<br>
-
-                - 김진석
-            </div>
-
-            <div style="padding:15px;
-                        border-left:4px solid #f59e0b;
-                        background:#161b22;
-                        margin-bottom:10px;">
-
-                <strong>15:40 - 16:30</strong><br>
-
-                퇴근 후 솔로프리너가 되는 방법<br>
-
-                - 조장원
-            </div>
-
-            <div style="padding:15px;
-                        border-left:4px solid #ef4444;
-                        background:#161b22;">
-
-                <strong>16:30</strong><br>
-
-                클로징
-            </div>
-
-        </div>
-    </div>
-
-    <!-- 안내 -->
-    <div class="section" style="padding:50px 30px;">
-
-        <h2 style="text-align:center;">
-            📢 안내사항
-        </h2>
-
-        <div style="margin-top:20px; line-height:1.8;">
-
-            <p>🚫 당일 주차 지원이 제공되지 않습니다</p>
-            <p>🚇 대중교통 이용을 부탁드립니다</p>
-
-        </div>
-
-        <div style="margin-top:30px;
-                    padding:20px;
-                    background:#161b22;
-                    border-radius:10px;">
-
-            <p>🎁 스폰서</p>
-
-            <strong>INFRAGISTICS</strong><br>
-
-            <span style="opacity:0.7;">
-                UI/UX 3rd Party Tool 제공
-            </span>
-        </div>
-    </div>
-
-    <!-- 발표자 모집 -->
-    <div class="section"
-         style="padding:60px 30px;
-                background:#0d1117;">
-
-        <h2 style="text-align:center;">
-            🎤 Dot4 Talker 모집
-        </h2>
-
-        <p style="text-align:center;
-                  margin-top:20px;
-                  line-height:1.8;">
-
-            매월 마지막 주 목요일 오프라인 밋업에서<br>
-            여러분이 직접 발표자가 될 수 있습니다!
-        </p>
-
-        <ul style="margin-top:20px; line-height:1.8;">
-
-            <li>.NET 기술 이야기</li>
-            <li>개인 프로젝트</li>
-            <li>개발 경험 및 노하우</li>
-
-        </ul>
-
-        <p style="margin-top:20px;">
-            👉 주제는 자유롭게 준비하세요!
-        </p>
-    </div>
-
-    <!-- 신청 -->
-    <div class="section"
-         style="padding:60px 30px;
-                text-align:center;
-                background:linear-gradient(135deg,#1f2937,#111827);">
-
-        <h2>발표 신청</h2>
-
-        <a href="https://forms.office.com/r/z5QtKLUweU"
-           class="button"
-           style="display:inline-block;
-                  margin-top:20px;
-                  padding:15px 40px;
-                  background:#22c55e;
-                  color:#000;
-                  border-radius:8px;
-                  text-decoration:none;
-                  font-weight:bold;">
-
-            신청하기 →
-        </a>
-    </div>
-
-    <!-- 푸터 -->
-    <div style="padding:30px;
-                text-align:center;
-                font-size:14px;
-                opacity:0.6;">
-
-        Dot4 Community Meetup | 2026.05.28
-    </div>
-
-</div>
-
-<!-- iframe 자동 높이 -->
-<script>
-
-function sendHeight() {
-
-    const height =
-        document.documentElement.scrollHeight;
-
-    parent.postMessage({
-        type: 'setHeight',
-        height: height
-    }, '*');
-}
-
-window.addEventListener('load', sendHeight);
-window.addEventListener('resize', sendHeight);
-
-setTimeout(sendHeight, 500);
-
-</script>
+        setTimeout(sendHeight, 300);
+        setTimeout(sendHeight, 1000);
+        setTimeout(sendHeight, 2000);
+    </script>
 
 </body>
+
 </html>
